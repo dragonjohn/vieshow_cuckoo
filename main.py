@@ -20,7 +20,9 @@ time_list = movie_day_list.find_all('li')
 print movie_day_list
 print len(time_list)
 
-# beside the Pre-sale ticket already release one week, we assume there might have other time will release later, count the total number bigger than.
+# beside the Pre-sale ticket already release one week earlier, we assume there might have other time will release later, count the total number bigger than.
+
+# trigger_count means the current pre-sale sessions, count by html "li" attribute.
 trigger_count = 6
 while (trigger_count < len(time_list)):
 	print("New Schedule!\a")
